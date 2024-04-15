@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* <================= header start =================> */
+.navbar {
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    padding: 10px 0;
+}
+.gif {
+    width: 40px;
+    transform: translateX(-20px) rotate(-90deg);
+}
+.info h6, p {
+    font-size: 13px !important;
+}
+.info img {
+    width: 16px;
+}
+.pro_img img {
+    width: 48px;
+    height: 48px;
+}
+.pro_img img:hover {
+    cursor: pointer;
+}
+.profile {
+    justify-content: center;
+    align-items: center;
+}
+/* <================= header end =================> */
+
+/* <================= wellcome start =================> */
+.welcome_content {
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+}
+.slider_one {
+    margin-bottom: -7px !important;
+}
+.slider_one img {
+    margin: 0;
+}
+.slick-dots {
+    margin: 0 0 36px;
+}
+.slick-dots li button::before {
+    width: 14px;
+    height: 14px;
+}
+.slick-dots li button {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+.slick-dots li.slick-active button:before {
+    color: #ffffff;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 50%;
+    opacity: 1;
+}
+/* <================= wellcome end =================> */
+
+/* <================= live_section start =================> */
+.live_section {
+    font-size: 12px;
+    font-weight: bolder;
+}
+.live_section .table tr th, td {
+    text-align: center;
+    color: #5255FF !important;
+}
+.live_section .table tr td img {
+    width: 20px;
+    height: 20px;
+    
+}
+/* <================= live_section end =================> */
+
+/* <================= live_section end =================> */
+.game_section .left-side {
+    max-height: 350px;
+    overflow-y: scroll;
+}
+.game_section .right-side {
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+}
+.game_section .right-side img {
+    margin: 10px 0;
+}
+/* <================= live_section end =================> */
+
+/* <================= footer-navigation start =================> */
+.footer-navigation {
+    background-image: url('../images/nabback.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.footer-navigation ul {
+    padding: 0;
+    margin: 0;
+}
+.footer-navigation ul li {
+    list-style-type: none;
+    margin: 0 auto;
+    color: #fff;
+}
+.offcanvas {
+    width: 264px !important;
+}
+.offcanvas-body {
+    color: #0030FF;
+    font-weight: bold !important;
+    padding-left: 40px;
+    padding-right: 0!important;
+}
+.offcanvas-body .info h6{
+    font-weight: bolder !important;
+}
+
+.border-gradient {
+    background: linear-gradient(to right, #0030FF, rgba(128, 128, 128, 0));
+    padding: 3px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.inner-element {
+    background-color: #fff;
+    padding: 5px;
+}
+.inner-element a {
+    text-decoration: none;
+}
+.menus {
+    background-color: #0030FF;
+    padding: 15px;
+    margin-top: -70px;
+    border-radius: 50%;
+}
+
+/* <================= footer-navigation end =================> */
