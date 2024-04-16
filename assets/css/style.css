@@ -3,11 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: #f4f4f4;
+}
+main {
+    margin-bottom: 80px;
+}
 
 /* <================= header start =================> */
 .navbar {
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
-    padding: 10px 0;
+    padding: 8px 0;
 }
 .gif {
     width: 40px;
@@ -20,8 +26,8 @@
     width: 16px;
 }
 .pro_img img {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
 }
 .pro_img img:hover {
     cursor: pointer;
@@ -42,7 +48,8 @@
 .slider_one img {
     margin: 0;
 }
-.slick-dots {
+
+/* .slick-dots {
     margin: 0 0 36px;
 }
 .slick-dots li button::before {
@@ -61,12 +68,12 @@
     border: 1px solid black;
     border-radius: 50%;
     opacity: 1;
-}
+} */
 /* <================= wellcome end =================> */
 
 /* <================= live_section start =================> */
 .live_section {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bolder;
 }
 .live_section .table tr th, td {
@@ -78,6 +85,15 @@
     height: 20px;
     
 }
+.big {
+    font-size: 13px;
+}
+.live_section .card {
+    box-shadow: 0px 0px 30px #c7bcc2 !important;
+}
+.live_section .card-body {
+    padding-bottom: 0;
+}
 /* <================= live_section end =================> */
 
 /* <================= live_section end =================> */
@@ -85,14 +101,23 @@
     max-height: 350px;
     overflow-y: scroll;
 }
+.game_section .left-side::-webkit-scrollbar {
+    display: none;
+}
 .game_section .right-side {
-    max-height: 400px;
+    max-height: 350px;
     overflow-y: scroll;
     overflow-x: hidden !important;
 }
-.game_section .right-side img {
-    margin: 10px 0;
+.game_section .right-side::-webkit-scrollbar {
+    display: none;
 }
+.game_section .right-side {
+    padding: 0 12px;
+} 
+.game_section .right-side div .col-4 {
+    padding: 5px;
+} 
 /* <================= live_section end =================> */
 
 /* <================= footer-navigation start =================> */
@@ -101,30 +126,35 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px;
-    position: sticky;
+    position: fixed;
+    padding: 10px 25px;
     bottom: 0;
     left: 0;
     width: 100%;
     z-index: 999;
 }
-.footer-navigation ul {
-    padding: 0;
-    margin: 0;
+
+.footer-navigation a {
+    color: #ede6e6;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 10px;
+    text-align: center;
 }
-.footer-navigation ul li {
-    list-style-type: none;
-    margin: 0 auto;
-    color: #fff;
-}
+
 .offcanvas {
     width: 264px !important;
 }
 .offcanvas-body {
-    color: #0030FF;
+    color: #0000ff;
     font-weight: bold !important;
     padding-left: 40px;
     padding-right: 0!important;
+}
+.canva-pro img {
+    width: 40px;
+    height: 40px;
+    margin-left: -40px;
 }
 .offcanvas-body .info h6{
     font-weight: bolder !important;
@@ -143,10 +173,15 @@
 .inner-element a {
     text-decoration: none;
 }
-.menus {
-    background-color: #0030FF;
-    padding: 15px;
-    margin-top: -70px;
+.inner-element img {
+    margin: 0 20px 0 5px;
+}
+
+.menus .img-bg {
+    background-image: linear-gradient(to bottom, #000B3B, #0030FF);
+    padding: 18px 15px;
+    margin-top: -50px;
+    margin-left: -3px;
     border-radius: 50%;
 }
 
