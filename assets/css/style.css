@@ -10,6 +10,8 @@ main {
     margin-bottom: 80px;
 }
 
+
+/* <================= deposit start =================> */
 /* <================= header start =================> */
 .navbar {
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
@@ -36,9 +38,15 @@ main {
     justify-content: center;
     align-items: center;
 }
+.top_icons a img {
+    width: 30px;
+}
+.top_icons a .img1 {
+    padding: 5px;
+}
 /* <================= header end =================> */
 
-/* <================= wellcome start =================> */
+/* <================= welcome start =================> */
 .welcome_content {
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
 }
@@ -69,7 +77,7 @@ main {
     border-radius: 50%;
     opacity: 1;
 } */
-/* <================= wellcome end =================> */
+/* <================= welcome end =================> */
 
 /* <================= live_section start =================> */
 .live_section {
@@ -83,7 +91,6 @@ main {
 .live_section .table tr td img {
     width: 20px;
     height: 20px;
-    
 }
 .big {
     font-size: 13px;
@@ -107,7 +114,6 @@ main {
 .game_section .right-side {
     max-height: 350px;
     overflow-y: scroll;
-    overflow-x: hidden !important;
 }
 .game_section .right-side::-webkit-scrollbar {
     display: none;
@@ -115,10 +121,198 @@ main {
 .game_section .right-side {
     padding: 0 12px;
 } 
-.game_section .right-side div .col-4 {
-    padding: 5px;
-} 
 /* <================= live_section end =================> */
+/* <================= Deposit end =================> */
+
+
+
+/* <================= withdraw start =================> */
+/* <================= deposit_section start =================> */
+.deposit_section .nav {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+.deposit_section .nav button {
+    position: relative;
+    margin-right: 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.deposit_section .nav button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    padding: 2px;
+    background: linear-gradient(180deg, #005DAC, #0030FF);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+.deposit_section .nav .active {
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+}
+.deposit_section .nav::-webkit-scrollbar {
+    display: none;
+}
+.deposit_section .title p {
+    font-size: 13px;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+.deposit_section .item1 {
+    background: #000084 !important;
+}
+.deposit_section .items {
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+.deposit_section .items a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.deposit_section .items a i {
+    font-size: 26px;
+}
+.deposit_section .items a img {
+    width: 26px;
+    height: 26px;
+}
+/* <================= deposit_section end =================> */
+/* <================= withdraw end =================> */
+
+
+/* <================= reference start =================> */
+/* <================= overview_section start =================> */
+.overview_section .nav {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+.overview_section .nav button {
+    position: relative;
+    margin-right: 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.overview_section .nav button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    padding: 2px;
+    background: linear-gradient(180deg, #005DAC, #0030FF);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+.overview_section .nav .active {
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+}
+.overview_section .nav::-webkit-scrollbar {
+    display: none;
+}
+.over-view-content .title p {
+    font-size: 18px !important;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
+.referral-section {
+    display: flex;
+    align-items: center;
+}
+
+#referral-link {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    color: #fff;
+    outline: none;
+}
+
+#copy-button {
+    padding: 10px 10px;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#copy-button i {
+    font-size: 22px;
+}
+#liveToast {
+    position: fixed;
+    bottom: 100px;
+    left: 200px;
+}
+
+.over-view-content .box {
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.table-area .table tr th {
+    font-size: 13px;
+    color: #fff !important;
+    text-align: center;
+}
+.table-area .table tr td {
+    font-size: 11px;
+    color: #fff !important;
+}
+.table-area .table-striped-columns>:not(caption)>tr>:nth-child(2n) {
+    background-image: linear-gradient(to bottom, rgb(11 81 141), #1a35aa);
+}
+.table-area .table>:not(caption)>*>* {
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+}
+/* <================= overview_section end =================> */
+
+/* <================= rewards section start =================> */
+.progress, .progress-stacked {
+    --bs-progress-height: 7px;
+}
+.referral-box .left-side .content small, p {
+    font-size: 11px !important;
+}
+.referral-box .right-side span{
+    font-size: 11px !important;
+}
+.referral-box {
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    margin: 10px 0 !important;
+    border-radius: 5px;
+    padding: 15px 10px;
+    color: #fff;
+}
+/* <================= rewards section end =================> */
+/* <================= reference end =================> */
+
+
 
 /* <================= footer-navigation start =================> */
 .footer-navigation {
