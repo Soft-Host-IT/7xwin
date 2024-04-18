@@ -10,8 +10,6 @@ main {
     margin-bottom: 80px;
 }
 
-
-/* <================= deposit start =================> */
 /* <================= header start =================> */
 .navbar {
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
@@ -46,6 +44,7 @@ main {
 }
 /* <================= header end =================> */
 
+/* <================= deposit page start =================> */
 /* <================= welcome start =================> */
 .welcome_content {
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
@@ -56,27 +55,6 @@ main {
 .slider_one img {
     margin: 0;
 }
-
-/* .slick-dots {
-    margin: 0 0 36px;
-}
-.slick-dots li button::before {
-    width: 14px;
-    height: 14px;
-}
-.slick-dots li button {
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-}
-.slick-dots li.slick-active button:before {
-    color: #ffffff;
-    background-color: #ffffff;
-    border: 1px solid black;
-    border-radius: 50%;
-    opacity: 1;
-} */
 /* <================= welcome end =================> */
 
 /* <================= live_section start =================> */
@@ -103,7 +81,7 @@ main {
 }
 /* <================= live_section end =================> */
 
-/* <================= live_section end =================> */
+/* <================= game_section start =================> */
 .game_section .left-side {
     max-height: 350px;
     overflow-y: scroll;
@@ -121,26 +99,23 @@ main {
 .game_section .right-side {
     padding: 0 12px;
 } 
-/* <================= live_section end =================> */
-/* <================= Deposit end =================> */
+/* <================= game_section end =================> */
+/* <================= Deposit page end =================> */
 
-
-
-/* <================= withdraw start =================> */
-/* <================= deposit_section start =================> */
-.deposit_section .nav {
+/* <================= withdraw page start =================> */
+/* <================= withdraw nav start =================> */
+.withdraw_section .nav {
     overflow-x: auto;
     flex-wrap: nowrap;
     white-space: nowrap;
 }
-.deposit_section .nav button {
+.withdraw_section .nav button {
     position: relative;
     margin-right: 10px;
     font-size: 11px;
     font-weight: bold;
 }
-
-.deposit_section .nav button::before {
+.withdraw_section .nav button::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -153,60 +128,245 @@ main {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
 }
-.deposit_section .nav .active {
+.withdraw_section .nav .active {
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
 }
-.deposit_section .nav::-webkit-scrollbar {
+.withdraw_section .nav::-webkit-scrollbar {
     display: none;
 }
-.deposit_section .title p {
-    font-size: 13px;
+/* <================= withdraw nav end =================> */
+
+/* <================= deposit start =================> */
+.withdraw_section .payment-method .title p, 
+.withdraw_section .bank-transfer .title p,
+.withdraw_section .bank-details .title p,
+.withdraw_section .deposit_quata .title p,
+.withdraw_section .deposit_info .title p,
+.withdraw_section .transection_id label,
+.withdraw_section .receipt .title label,
+.amount-section .form-group label,
+.withdraw_section .receipt .title p {
+    font-size: 13px !important;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    margin-bottom: 0;
+}
+.withdraw_section .payment-method .item1 {
+    background: #000084 !important;
+}
+.withdraw_section .payment-method .items {
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    padding: 10px 5px;
+    border-radius: 5px;
+    width: 31%;
+    display: inline-block;
+    margin-top: 10px;
+}
+.withdraw_section .payment-method .items a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.withdraw_section .payment-method .items a i {
+    font-size: 26px;
+}
+.withdraw_section .payment-method .items a img {
+    width: 26px;
+    height: 26px;
+}
+.hr {
+    margin: 10px 0;
+    color: #005DAC;
+    line-height: 16px;
+    border: 1px solid;
+}
+.withdraw_section .bank-transfer .items {
+    margin-top: 10px;
+}
+.withdraw_section .bank-details .account_name{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    color: #fff;
+    outline: none;
+    border: none;    
+    border-top-right-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 5px;
+}
+.withdraw_section .bank-details #copy-button {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    outline: none;
+}
+.withdraw_section .bank-details .bg-part{
+    background: #e1e1e1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.withdraw_section .deposit_info .form-group {
+    margin-top: 10px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    color: #fff !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    background-image: url('../images/angle-down.svg');
+}
+.select2-container .select2-selection--single {
+    height: initial;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    padding: 8px;
+    border-radius: 5px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #ffffff transparent transparent transparent;
+    border-width: 10px 10px 0 10px;
+    margin-left: -4px;
+    margin-top: -4px;
+    position: absolute;
+    top: 85%;
+    left: -45%;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent #fff transparent;
+    border-width: 0 10px 10px 10px;
+}
+.deposit_quata {
+    margin: 10px 0;
+}
+.deposit_quata .clr {
+    color: #000084 !important;
+}
+.withdraw_section .deposit_quata #bdt-button {
+    border-top-right-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    color: #fff;
+    padding: 10px 20px;
+}
+.withdraw_section .deposit_quata .account_name{
+    flex: 1;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    color: #fff;
+    outline: none;
+    border: none;    
+    border-top-right-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    text-align: right;
+}
+.withdraw_section .deposit_quata .amount-btn input {
+    color: #fff;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    width: 100%;
+    border: none;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+}
+.withdraw_section .transection_id input {
+    color: #fff;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none !important;
+    margin-top: 10px;
+}
+.withdraw_section .transection_id input::placeholder {
+    color: #fff;
+}
+.withdraw_section .receipt input {
+    flex: 1;
+    color: #fff;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    border: none;
+    border-radius: 5px;
+    outline: none !important;
+    padding: 10px 20px;
+}
+.withdraw_section .receipt .input-group i {
+    color: #fff;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    border: none;
+    border-radius: 5px;
+    outline: none !important;
+    vertical-align: middle;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.withdraw_section .receipt input::placeholder {
+    color: #fff;
+}
+.withdraw_section .receipt .title a {
+    text-decoration: none;
+}
+.withdraw_section .receipt .title a:hover {
+    text-decoration: underline;
+}
+.withdraw_section .submitBtn {
+    margin: 40px 0 100px;
+}
+.withdraw_section .submitBtn button {
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    color: #fff;
+}
+/* <================= deposit end =================> */
+
+/* <================= withdraw start =================> */
+.amount-section .form-group input {
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    color: #fff;
+    padding: 10px 20px;
+    outline: none;
+}
+.amount-section .form-group input::placeholder {
+    color: #fff; 
+}
+.endline {
+    margin-top: 20px;
+    font-size: 14px !important;
     font-weight: bold;
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
     -webkit-background-clip: text;
     color: transparent;
     background-clip: text;
 }
-.deposit_section .item1 {
-    background: #000084 !important;
-}
-.deposit_section .items {
-    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
-    padding: 10px 5px;
-    border-radius: 5px;
-}
-.deposit_section .items a {
-    font-size: 12px;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-}
-.deposit_section .items a i {
-    font-size: 26px;
-}
-.deposit_section .items a img {
-    width: 26px;
-    height: 26px;
-}
-/* <================= deposit_section end =================> */
 /* <================= withdraw end =================> */
+/* <================= withdraw page end =================> */
 
-
-/* <================= reference start =================> */
-/* <================= overview_section start =================> */
-.overview_section .nav {
+/* <================= reference page start =================> */
+/* <================= reference nav start =================> */
+.reference_section .nav {
     overflow-x: auto;
     flex-wrap: nowrap;
     white-space: nowrap;
 }
-.overview_section .nav button {
+.reference_section .nav button {
     position: relative;
     margin-right: 10px;
     font-size: 11px;
     font-weight: bold;
 }
-
-.overview_section .nav button::before {
+.reference_section .nav button::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -219,12 +379,15 @@ main {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
 }
-.overview_section .nav .active {
+.reference_section .nav .active {
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
 }
-.overview_section .nav::-webkit-scrollbar {
+.reference_section .nav::-webkit-scrollbar {
     display: none;
 }
+/* <================= reference nav end =================> */
+
+/* <================= overview start =================> */
 .over-view-content .title p {
     font-size: 18px !important;
     font-weight: bold;
@@ -233,12 +396,10 @@ main {
     color: transparent;
     background-clip: text;
 }
-
 .referral-section {
     display: flex;
     align-items: center;
 }
-
 #referral-link {
     flex: 1;
     padding: 10px;
@@ -249,7 +410,6 @@ main {
     color: #fff;
     outline: none;
 }
-
 #copy-button {
     padding: 10px 10px;
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
@@ -266,7 +426,6 @@ main {
     bottom: 100px;
     left: 200px;
 }
-
 .over-view-content .box {
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
     color: #fff;
@@ -290,7 +449,7 @@ main {
 .table-area .table>:not(caption)>*>* {
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
 }
-/* <================= overview_section end =================> */
+/* <================= overview end =================> */
 
 /* <================= rewards section start =================> */
 .progress, .progress-stacked {
@@ -310,9 +469,7 @@ main {
     color: #fff;
 }
 /* <================= rewards section end =================> */
-/* <================= reference end =================> */
-
-
+/* <================= reference page end =================> */
 
 /* <================= footer-navigation start =================> */
 .footer-navigation {
@@ -327,7 +484,6 @@ main {
     width: 100%;
     z-index: 999;
 }
-
 .footer-navigation a {
     color: #ede6e6;
     font-weight: 600;
@@ -335,7 +491,6 @@ main {
     font-size: 10px;
     text-align: center;
 }
-
 .offcanvas {
     width: 264px !important;
 }
@@ -353,7 +508,6 @@ main {
 .offcanvas-body .info h6{
     font-weight: bolder !important;
 }
-
 .border-gradient {
     background: linear-gradient(to right, #0030FF, rgba(128, 128, 128, 0));
     padding: 3px;
@@ -370,7 +524,6 @@ main {
 .inner-element img {
     margin: 0 20px 0 5px;
 }
-
 .menus .img-bg {
     background-image: linear-gradient(to bottom, #000B3B, #0030FF);
     padding: 18px 15px;
@@ -378,5 +531,4 @@ main {
     margin-left: -3px;
     border-radius: 50%;
 }
-
 /* <================= footer-navigation end =================> */
