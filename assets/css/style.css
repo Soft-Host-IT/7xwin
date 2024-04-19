@@ -44,7 +44,7 @@ main {
 }
 /* <================= header end =================> */
 
-/* <================= deposit page start =================> */
+/* <================= home page start =================> */
 /* <================= welcome start =================> */
 .welcome_content {
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
@@ -100,42 +100,9 @@ main {
     padding: 0 12px;
 } 
 /* <================= game_section end =================> */
-/* <================= Deposit page end =================> */
+/* <================= home page end =================> */
 
 /* <================= withdraw page start =================> */
-/* <================= withdraw nav start =================> */
-.withdraw_section .nav {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-}
-.withdraw_section .nav button {
-    position: relative;
-    margin-right: 10px;
-    font-size: 11px;
-    font-weight: bold;
-}
-.withdraw_section .nav button::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 50px;
-    padding: 2px;
-    background: linear-gradient(180deg, #005DAC, #0030FF);
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-}
-.withdraw_section .nav .active {
-    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
-}
-.withdraw_section .nav::-webkit-scrollbar {
-    display: none;
-}
-/* <================= withdraw nav end =================> */
-
 /* <================= deposit start =================> */
 .withdraw_section .payment-method .title p, 
 .withdraw_section .bank-transfer .title p,

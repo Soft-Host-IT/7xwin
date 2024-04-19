@@ -43,8 +43,25 @@
         <!-- <================= withdraw start =================> -->
         <div class="withdraw_section my-3">
             <div class="container">
-                <!-- <================= withdraw start =================> -->
-                <div class="bank-transfer mb-4">
+                <!-- <================= deposit start =================> --> 
+                <div class="payment-method">
+                    <div class="title">
+                        <p>Payment method</p>
+                    </div>
+                    <div class="d-flex justify-content-between" style="flex-wrap: wrap;">
+                        <div class="items item1 text-center">
+                            <a href="#"><i class="fa-solid fa-building-columns"></i> <br>Bank Transfer</a>
+                        </div>
+                        <div class="items item2 text-center">
+                            <a href="#"><img src="assets/images/crypto.svg" alt="image"><br>Crypto</a>
+                        </div>
+                        <div class="items item3 text-center">
+                            <a href="#"><img src="assets/images/online-banking.svg" alt="image"><br>Online Banking</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hr">
+                <div class="bank-transfer">
                     <div class="title">
                         <p>Bank Transfer</p>
                     </div>
@@ -60,22 +77,110 @@
                         </div>
                     </div>
                 </div>
-                <div class="amount-section">
-                    <div class="form-group mb-2">
-                        <label for="amount" class="form-label mb-2">Amount</label>
-                        <input type="text" class="form-control" placeholder="1000" id="amount" value="">
+                <hr class="hr">
+                <div class="bank-details">
+                    <div class="title">
+                        <p>Bank Transfer</p>
                     </div>
-                
-                    <div class="form-group mb-2">
-                        <label for="payment" class="form-label mb-2">Input Payment Number</label>
-                        <input type="number" class="form-control" placeholder="01710000000000" id="payment" value="">
+                    <div class="bg-part">
+                        <div class="form-group mb-2">
+                            <div class="input-group">
+                                <input type="text" class="account_name" id="account_name" value="MS Hasan Treads" readonly>
+                                <button id="copy-button"><i class="fa-regular fa-copy" id="copyName"></i></button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="account_name" id="account_number" value="01773664335" readonly>
+                                <button id="copy-button"><i class="fa-regular fa-copy" id="copyNumber"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hr">
+                <div class="deposit_info">
+                    <div class="title">
+                        <p>Deposit Info</p>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control select2" style="width: 100%;">
+                            <option selected="selected">Online Banking</option>
+                            <option>American Express</option>
+                            <option>BCB Bank</option>
+                            <option>BRB</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="deposit_quata">
+                    <div class="title d-flex justify-content-between my-2">
+                        <p>Deposit Quata</p>
+                        <p class="clr">10.000 BDT - 20.000 BDT</p>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <button id="bdt-button">BDT</button>
+                            <input type="text" class="account_name" id="account_amount" value="000" readonly>
+                        </div>
+                    </div>
+                    <div class="title d-flex justify-content-between mt-3">
+                        <p>Processing Fess</p>
+                        <p>0.000</p>
+                    </div>
+                    <div class="title d-flex justify-content-between my-2">
+                        <p>Receive Amount</p>
+                        <p>BDT 0.00</p>
+                    </div>
+                    <div class="row amount-btn mt-4">
+                        <div class="col-3 mb-3">
+                            <input type="text" readonly value="300">
+                        </div>
+                        <div class="col-3 mb-3">
+                            <input type="text" readonly value="400">
+                        </div>
+                        <div class="col-3 mb-3">
+                            <input type="text" readonly value="500">
+                        </div>
+                        <div class="col-3 mb-3">
+                            <input type="text" readonly value="1000">
+                        </div>
+                        <div class="col-3 mb-3">
+                            <input type="text" readonly value="1500">
+                        </div>
+                        <div class="col-3 mb-3">
+                            <input type="text" readonly value="2000">
+                        </div>
+                        <div class="col-3 mb-3">
+                            <input type="text" readonly value="2500">
+                        </div>
+                    </div>
+                </div>
+                <div class="transection_id">
+                    <div class="form-group">
+                        <label for="trxid" class="form-label mb-0">Transection ID/TRX ID</label>
+                        <input type="text" placeholder="Please Inter Transection ID" id="trxid" value="">
+                    </div>
+                </div>
+                <hr class="hr">
+                <div class="receipt">
+                    <div class="title">
+                        <label for="receipt">Receipts</label>
+                    </div>
+                    <div class="form-group mt-2">
+                        <div class="input-group">
+                            <input type="text" id="receipt" placeholder="Receipts" value="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="title mt-2">
+                        <a href="#">
+                            <p>+Receipts</p>
+                        </a>
                     </div>
                 </div>
                 <div class="text-center submitBtn">
-                    <button type="button" class="btn mt-5">Submit</button>
-                    <p class="endline">Withdrawal Allowed Two Times For <br> Every 24 Hours !</p>
+                    <button type="button" class="btn">Submit</button>
                 </div>
-                <!-- <================= withdraw end =================> --> 
+                <!-- <================= deposit end =================> -->
             </div>
         </div>
         <!-- <================= withdraw end =================> --> 
