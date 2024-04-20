@@ -102,48 +102,92 @@ main {
 /* <================= game_section end =================> */
 /* <================= home page end =================> */
 
-/* <================= withdraw page start =================> */
-/* <================= deposit start =================> */
-.withdraw_section .payment-method .title p, 
-.withdraw_section .bank-transfer .title p,
-.withdraw_section .bank-details .title p,
-.withdraw_section .deposit_quata .title p,
-.withdraw_section .deposit_info .title p,
-.withdraw_section .transection_id label,
-.withdraw_section .receipt .title label,
+/* <================= deposit page start =================> */
+
+.cus .col-4:first-child,
+.cus .col-4:nth-child(4),
+.cus .col-4:nth-child(7),
+.cus .col-4:nth-child(10),
+.cus .col-4:nth-child(13),
+.cus .col-4:nth-child(16) {
+    padding-left: 0 !important;
+    padding-right: 8px !important;
+}
+.cus .col-4 {
+    padding: 6px 4px;
+}
+.cus .col-4:nth-child(3),
+.cus .col-4:nth-child(6),
+.cus .col-4:nth-child(9),
+.cus .col-4:nth-child(12),
+.cus .col-4:nth-child(15) {
+    padding-right: 0 !important;
+    padding-left: 8px !important;
+}
+.cus .item {
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+.cus .item-3 {
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    border-radius: 5px;
+}
+.cus .item-3 img {
+    min-height: 80px;
+}
+.cus .item span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+.cus .nam {
+    font-size: 14px;
+    font-weight: bold;
+    color: #198af6;
+}
+.cus .item a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.cus .item a img {
+    width: 26px;
+    height: 26px;
+}
+.cus .cus-img a img {
+    width: 36px !important;
+    height: 40px !important;
+}
+.last-bg {
+    background: #3B6CB5 !important;
+}
+.cus .item a i {
+    font-size: 26px;
+}
+
+.deposit_section .payment-method .title p, 
+.deposit_section .bank-transfer .title p,
+.deposit_section .bank-details .title p,
+.deposit_section .deposit_quata .title p,
+.deposit_section .deposit_info .title p,
+.deposit_section .transection_id label,
+.deposit_section .receipt .title label,
 .amount-section .form-group label,
-.withdraw_section .receipt .title p {
+.deposit_section .receipt .title p {
     font-size: 13px !important;
     font-weight: bold;
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
     -webkit-background-clip: text;
     color: transparent;
     background-clip: text;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
-.withdraw_section .payment-method .item1 {
+.deposit_section .payment-method .item-1 {
     background: #000084 !important;
-}
-.withdraw_section .payment-method .items {
-    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
-    padding: 10px 5px;
-    border-radius: 5px;
-    width: 31%;
-    display: inline-block;
-    margin-top: 10px;
-}
-.withdraw_section .payment-method .items a {
-    font-size: 12px;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-}
-.withdraw_section .payment-method .items a i {
-    font-size: 26px;
-}
-.withdraw_section .payment-method .items a img {
-    width: 26px;
-    height: 26px;
 }
 .hr {
     margin: 10px 0;
@@ -151,10 +195,8 @@ main {
     line-height: 16px;
     border: 1px solid;
 }
-.withdraw_section .bank-transfer .items {
-    margin-top: 10px;
-}
-.withdraw_section .bank-details .account_name{
+
+.deposit_section .bank-details .account_name {
     flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
@@ -167,21 +209,21 @@ main {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 5px;
 }
-.withdraw_section .bank-details #copy-button {
+.deposit_section .bank-details #copy-button {
     border-top-right-radius: 5px;
     border-top-left-radius: 0;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 0;
     outline: none;
 }
-.withdraw_section .bank-details .bg-part{
+.deposit_section .bank-details .bg-part{
     background: #e1e1e1;
     padding: 10px;
     border-radius: 5px;
-    margin-top: 10px;
+    
 }
-.withdraw_section .deposit_info .form-group {
-    margin-top: 10px;
+.deposit_section .deposit_info .form-group {
+    
 }
 .select2-container .select2-selection--single .select2-selection__rendered {
     color: #fff !important;
@@ -214,7 +256,7 @@ main {
 .deposit_quata .clr {
     color: #000084 !important;
 }
-.withdraw_section .deposit_quata #bdt-button {
+.deposit_section .deposit_quata #bdt-button {
     border-top-right-radius: 0;
     border-top-left-radius: 5px;
     border-bottom-right-radius: 0;
@@ -225,7 +267,7 @@ main {
     color: #fff;
     padding: 10px 20px;
 }
-.withdraw_section .deposit_quata .account_name{
+.deposit_section .deposit_quata .account_name{
     flex: 1;
     padding: 10px 20px;
     border: 1px solid #ccc;
@@ -239,7 +281,10 @@ main {
     border-bottom-left-radius: 0;
     text-align: right;
 }
-.withdraw_section .deposit_quata .amount-btn input {
+.deposit_section .deposit_quata .account_name::placeholder{
+    color: #fff;
+}
+.deposit_section .deposit_quata .amount-btn input {
     color: #fff;
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
     width: 100%;
@@ -248,7 +293,7 @@ main {
     padding: 8px;
     border-radius: 5px;
 }
-.withdraw_section .transection_id input {
+.deposit_section .transection_id input {
     color: #fff;
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
     width: 100%;
@@ -256,12 +301,12 @@ main {
     padding: 10px 20px;
     border-radius: 5px;
     outline: none !important;
-    margin-top: 10px;
+    
 }
-.withdraw_section .transection_id input::placeholder {
+.deposit_section .transection_id input::placeholder {
     color: #fff;
 }
-.withdraw_section .receipt input {
+.deposit_section .receipt input {
     flex: 1;
     color: #fff;
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
@@ -270,7 +315,7 @@ main {
     outline: none !important;
     padding: 10px 20px;
 }
-.withdraw_section .receipt .input-group i {
+.deposit_section .receipt .input-group i {
     color: #fff;
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
     border: none;
@@ -280,25 +325,51 @@ main {
     padding: 10px 20px;
     font-size: 20px;
 }
-.withdraw_section .receipt input::placeholder {
+.deposit_section .receipt input::placeholder {
     color: #fff;
 }
-.withdraw_section .receipt .title a {
+.deposit_section .receipt .title a {
     text-decoration: none;
 }
-.withdraw_section .receipt .title a:hover {
+.deposit_section .receipt .title a:hover {
     text-decoration: underline;
 }
-.withdraw_section .submitBtn {
+.deposit_section .submitBtn {
     margin: 40px 0 100px;
 }
-.withdraw_section .submitBtn button {
+.deposit_section .submitBtn button {
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
     color: #fff;
+}
+
+#qrbutton {
+    font-size: 10px;
+}
+.info-item .nam2 {
+    font-size: 11px !important;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+.deposit_section .wallet {
+    margin-bottom: 100px;
 }
 /* <================= deposit end =================> */
 
 /* <================= withdraw start =================> */
+.withdraw_section .bank-transfer .title p {
+    font-size: 13px !important;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    margin-bottom: 0;
+    margin-bottom: 10px;
+}
 .amount-section .form-group input {
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
     color: #fff;
@@ -318,7 +389,6 @@ main {
     background-clip: text;
 }
 /* <================= withdraw end =================> */
-/* <================= withdraw page end =================> */
 
 /* <================= reference page start =================> */
 /* <================= reference nav start =================> */
@@ -452,11 +522,30 @@ main {
     z-index: 999;
 }
 .footer-navigation a {
-    color: #ede6e6;
+    color: #ffffff;
+    opacity: .5;
     font-weight: 600;
     text-decoration: none;
     font-size: 10px;
     text-align: center;
+}
+.footer-navigation a.active {
+    color: #ffffff;
+    opacity: 1;
+}
+.footer-navigation a i {
+    font-size: 20px;
+}
+.footer-navigation .menus {
+    opacity: 1;
+}
+.footer-navigation .menus .img-bg {
+    background-image: linear-gradient(to bottom, #000B3B, #0030FF);
+    padding: 18px 15px;
+    margin-top: -50px;
+    margin-left: -3px;
+    border-radius: 50%;
+    opacity: 1;
 }
 .offcanvas {
     width: 264px !important;
@@ -491,11 +580,5 @@ main {
 .inner-element img {
     margin: 0 20px 0 5px;
 }
-.menus .img-bg {
-    background-image: linear-gradient(to bottom, #000B3B, #0030FF);
-    padding: 18px 15px;
-    margin-top: -50px;
-    margin-left: -3px;
-    border-radius: 50%;
-}
+
 /* <================= footer-navigation end =================> */
