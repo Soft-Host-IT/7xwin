@@ -46,32 +46,32 @@
         <div class="reference_section my-3">
             <div class="container">
                
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <ul class="nav customnav nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active rounded-pill" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                            type="button" role="tab" aria-controls="pills-home" aria-selected="true">Over View</button>
+                        <button class="nav-link active rounded-pill" id="pills-overview-tab" data-bs-toggle="pill" data-bs-target="#pills-overview"
+                            type="button" role="tab" aria-controls="pills-overview" aria-selected="true">Over View</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link rounded-pill" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Rewards</button>
+                        <button class="nav-link rounded-pill" id="pills-reward-tab" data-bs-toggle="pill" data-bs-target="#pills-reward"
+                            type="button" role="tab" aria-controls="pills-reward" aria-selected="false">Rewards</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link rounded-pill" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Incomes</button>
+                        <button class="nav-link rounded-pill" id="pills-income-tab" data-bs-toggle="pill" data-bs-target="#pills-income"
+                            type="button" role="tab" aria-controls="pills-income" aria-selected="false">Incomes</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link rounded-pill" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Records</button>
+                        <button class="nav-link rounded-pill" id="pills-record-tab" data-bs-toggle="pill" data-bs-target="#pills-record"
+                            type="button" role="tab" aria-controls="pills-record" aria-selected="false">Records</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link rounded-pill" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Invite list</button>
+                        <button class="nav-link rounded-pill" id="pills-invoice-tab" data-bs-toggle="pill" data-bs-target="#pills-invoice"
+                            type="button" role="tab" aria-controls="pills-invoice" aria-selected="false">Invite list</button>
                     </li>
                 </ul>
 
                 <div class="tab-content" id="pills-tabContent">
                     <!-- <================= overview start =================> -->
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    <div class="tab-pane fade show active" id="pills-overview" role="tabpanel" aria-labelledby="pills-overview-tab"
                         tabindex="0">
                         <div class="over-view-content">
                             <div class="title">
@@ -176,7 +176,7 @@
                     <!-- <================= overview end =================> -->
 
                     <!-- <================= rewards start =================> -->
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                    <div class="tab-pane fade" id="pills-reward" role="tabpanel" aria-labelledby="pills-reward-tab" tabindex="0">
                         <div class="rewards-content">
                             <div class="referral-box">
                                 <div class="row">
@@ -318,8 +318,8 @@
                     <!-- <================= rewards end =================> -->
 
                     <!-- <================= incomes start =================> -->
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <div class="tab-pane inner_nav fade" id="pills-income" role="tabpanel" aria-labelledby="pills-income-tab" tabindex="0">
+                        <ul class="nav nav-pills " id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="pills-summary-tab" data-bs-toggle="pill" data-bs-target="#pills-summary"
                                     type="button" role="tab" aria-controls="pills-summary" aria-selected="true">Summary</button>
@@ -332,17 +332,99 @@
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-summary" role="tabpanel" aria-labelledby="pills-summary-tab"
                                 tabindex="0">
-                                <h1>summary</h1>
+                                <div class="card">
+                                    <div class="card-header text-center">
+                                        <h6 class="card-title mb-0">Todays Income</h6>
+                                        <h2 class="card-title mb-0">BDT 0.00</h2>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="income_card">
+                                            <table class="table table-borderless mb-0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Referral Bonous : </td>
+                                                        <td>200.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Achievement Rewards: </td>
+                                                        <td>19856</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Commission : </td>
+                                                        <td>12365</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Register: </td>
+                                                        <td>00.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Valid Invites: </td>
+                                                        <td>15.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Depositors: </td>
+                                                        <td>15.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mt-4">
+                                    <div class="card-header text-center">
+                                        <h6 class="card-title mb-0">Total Income</h6>
+                                        <h2 class="card-title mb-0">BDT 0.00</h2>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="income_card">
+                                            <table class="table table-borderless mb-0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Referral Bonous : </td>
+                                                        <td>200.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Achievement Rewards: </td>
+                                                        <td>19856</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Commission : </td>
+                                                        <td>12365</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Register: </td>
+                                                        <td>00.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Valid Invites: </td>
+                                                        <td>15.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Depositors: </td>
+                                                        <td>15.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="pills-details" role="tabpanel" aria-labelledby="pills-details-tab" tabindex="0">
-                                <h1>details</h1>
+                                
                             </div>
                         </div>
                     </div>
                     <!-- <================= incomes end =================> -->
 
                     <!-- <================= records start =================> -->
-                    <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+                    <div class="tab-pane fade" id="pills-record" role="tabpanel" aria-labelledby="pills-record-tab"
+                    tabindex="0">...</div>
+                    <!-- <================= record end =================> -->
+
+                    <!-- <================= records start =================> -->
+                    <div class="tab-pane fade" id="pills-invoice" role="tabpanel" aria-labelledby="pills-invoice-tab"
                     tabindex="0">...</div>
                     <!-- <================= record end =================> -->
                 </div>
@@ -381,6 +463,7 @@
         </div>
     </div>   
     
+    <!-- <================= offcanvas start =================> -->
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
         id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
         <div class="offcanvas-header">
@@ -388,7 +471,7 @@
             <div></div>
         </div>
         <div class="offcanvas-body">
-    
+            
             <div class="d-flex profile fw-bold mb-4">
                 <div class="canva-pro me-2">
                     <a href="profile.html">
@@ -400,73 +483,59 @@
                     <p class="mb-0">Balance: 235.000 BDT</p>
                 </div>
             </div>
-    
+
             <div class="border-gradient">
                 <div class="inner-element">
-                    <a href="reference.html">
-                        <img src="assets/images/refer2.svg" alt="image">Refer And Earn
-                    </a>
+                    <a href="reference.html"><i class="fi fi-sr-money-coin-transfer"></i>Refer And Earn</a>
                 </div>
             </div>
-    
+
             <div class="border-gradient">
                 <div class="inner-element">
-                    <a href="deposit.html">
-                        <img src="assets/images/deposit2.svg" alt="image">Deposit Log
-                    </a>
+                    <a href="deposit.html"><i class="fi fi-sr-deposit"></i>Deposit Log</a>
                 </div>
             </div>
-    
+
             <div class="border-gradient">
                 <div class="inner-element">
-                    <a href="withdraw.html">
-                        <img src="assets/images/withdraw2.svg" alt="image">Withdraw Log
-                    </a>
+                    <a href="withdraw.html"><i class="fi fi-sr-money-from-bracket"></i>Withdraw Log</a>
                 </div>
             </div>
-    
+
             <div class="border-gradient">
                 <div class="inner-element">
-                    <a href="#">
-                        <img src="assets/images/history.svg" alt="image">Bet History
-                    </a>
+                    <a href="#"><i class="fi fi-sr-journal-alt"></i>Bet History</a>
                 </div>
             </div>
-    
+
             <div class="border-gradient">
                 <div class="inner-element">
-                    <a href="#">
-                        <img src="assets/images/telegram.svg" alt="image">Telegram
-                    </a>
+                    <a href="#"><i class="fi fi-sr-hospitals"></i>Telegram</a>
                 </div>
             </div>
-    
+
             <div class="border-gradient">
                 <div class="inner-element">
-                    <a href="#">
-                        <img src="assets/images/promotion.svg" alt="image">Promotion
-                    </a>
+                    <a href="#"><i class="fi fi-sr-comment-info"></i>Promotion</a>
                 </div>
             </div>
-    
+
             <div class="border-gradient">
                 <div class="inner-element">
-                    <a href="#">
-                        <img src="assets/images/support.svg" alt="image">24/7 Support
-                    </a>
+                    <a href="#"><i class="fi fi-sr-customer-service"></i>24/7 Support</a>
                 </div>
             </div>
-    
+
             <div class="border-gradient">
                 <div class="inner-element">
-                    <a href="#">
-                        <img src="assets/images/logout.svg" alt="image">Log Out
-                    </a>
+                    <a href="#"><i class="fa-solid fa-right-from-bracket"></i>Log Out</a>
                 </div>
             </div>
-    
+
         </div>
     </div>
+    <!-- <================= offcanvas end =================> -->
+    
     <!-- <================= footer end =================> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

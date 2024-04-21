@@ -360,6 +360,10 @@ main {
 /* <================= deposit end =================> */
 
 /* <================= withdraw start =================> */
+.withdraw_section #withdrawSubmitBtn {
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    color: #fff;
+}
 .withdraw_section .bank-transfer .title p {
     font-size: 13px !important;
     font-weight: bold;
@@ -392,18 +396,18 @@ main {
 
 /* <================= reference page start =================> */
 /* <================= reference nav start =================> */
-.reference_section .nav {
+.reference_section .customnav {
     overflow-x: auto;
     flex-wrap: nowrap;
     white-space: nowrap;
 }
-.reference_section .nav button {
+.reference_section .customnav button {
     position: relative;
     margin-right: 10px;
     font-size: 11px;
     font-weight: bold;
 }
-.reference_section .nav button::before {
+.reference_section .customnav button::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -416,10 +420,10 @@ main {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
 }
-.reference_section .nav .active {
+.reference_section .customnav .active {
     background-image: linear-gradient(to bottom, #005DAC, #0030FF);
 }
-.reference_section .nav::-webkit-scrollbar {
+.reference_section .customnav::-webkit-scrollbar {
     display: none;
 }
 /* <================= reference nav end =================> */
@@ -506,7 +510,57 @@ main {
     color: #fff;
 }
 /* <================= rewards section end =================> */
+
+/* <================= Income section start =================> */
+.inner_nav button {
+    background: transparent !important;
+    border: none;
+    color: #007bfb;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 14px 10px 0;
+}
+.inner_nav button.active {
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF) !important;
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    background-clip: text !important;
+}
+.inner_nav .card {
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF) !important;
+    border: none;
+}
+.inner_nav .card .card-header {
+    background: #007bfb;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 16px 0;
+}
+.inner_nav .card .card-body {
+    padding: 20px;
+}
+.inner_nav .table tr td {
+    background: transparent !important;
+    color: white !important;
+    padding: 3px 0 !important;
+    text-align: center;
+}
+.inner_nav .table tr td:first-child {
+    text-align: left !important;
+}
+.inner_nav .table tr td:last-child {
+    text-align: right !important;
+}
+/* <================= Income section end =================> */
+
 /* <================= reference page end =================> */
+
+/* <================= profile page start =================> */
+.profile-section .profile-items {
+    margin-top: 100px;
+}
+/* <================= profile page end =================> */
 
 /* <================= footer-navigation start =================> */
 .footer-navigation {
@@ -576,9 +630,13 @@ main {
 }
 .inner-element a {
     text-decoration: none;
+    font-weight: bold;
+    color: #001ea1;
 }
-.inner-element img {
+.inner-element i {
     margin: 0 20px 0 5px;
+    color: #001ea1;
+    font-size: 20px;
 }
 
 /* <================= footer-navigation end =================> */
