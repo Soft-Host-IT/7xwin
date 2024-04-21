@@ -154,13 +154,8 @@ main {
     color: #fff;
     text-decoration: none;
 }
-.cus .item a img {
-    width: 26px;
-    height: 26px;
-}
-.cus .cus-img a img {
-    width: 36px !important;
-    height: 40px !important;
+.setwidth {
+    width: 25px;
 }
 .last-bg {
     background: #3B6CB5 !important;
