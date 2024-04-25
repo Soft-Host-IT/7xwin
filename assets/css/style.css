@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
 }
 body {
     background-color: #f4f4f4;
+    font-family: "Readex Pro", sans-serif;
 }
 main {
     margin-bottom: 80px;
@@ -19,7 +21,7 @@ main {
     width: 40px;
     transform: translateX(-20px) rotate(-90deg);
 }
-.info h6, p {
+.info>h6, .balance {
     font-size: 13px !important;
 }
 .info img {
@@ -99,6 +101,11 @@ main {
 .game_section .right-side {
     padding: 0 12px;
 } 
+.game_section .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    padding: 3px !important;
+}
 /* <================= game_section end =================> */
 /* <================= home page end =================> */
 
@@ -491,7 +498,7 @@ main {
 .progress, .progress-stacked {
     --bs-progress-height: 7px;
 }
-.referral-box .left-side .content small, p {
+.referral-box>.left-side>.content>small, .referp {
     font-size: 11px !important;
 }
 .referral-box .right-side span{
@@ -552,8 +559,161 @@ main {
 /* <================= reference page end =================> */
 
 /* <================= profile page start =================> */
-.profile-section .profile-items {
-    margin-top: 100px;
+.account_info {
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF) !important;
+    color: #ffffff;
+    /* font-weight: bold; */
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    padding: 20px 0 40px;
+}
+.account_info .verifiedBtn {
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid #ffffff;
+    font-size: 12px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+.account_info .vipBtn {
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid #ffffff;
+    font-size: 12px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+.account_info .nameTitle {
+    font-size: 16px;
+    padding: 5px 10px;
+}
+.account_info .logout {
+    font-size: 16px !important;
+    text-decoration: none;
+    color: #ffffff;
+}
+.account_info .subscription_pack .regular {
+    font-size: 16px !important;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: normal;
+    margin-bottom: 0 !important;
+}
+.account_info .credit .regular {
+    font-size: 14px !important;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: normal;
+    margin-bottom: 0 !important;
+}
+.account_info .credit .taka i {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.verify-section .verify_info .security {
+    font-size: 14px !important;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    margin: 10px 0;
+    display: inline-block;
+}
+.verify-section .verify_info .security i {
+    font-size: 14px !important;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    display: inline-block;
+    margin-left: 5px;
+}
+.verify-section .verify_info .percent {
+    font-size: 14px !important;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    display: inline-block;
+    text-decoration: none;
+}
+.verify-section .verify-body .getBdt {
+    color: #ffffff;
+    font-size: 11px;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF) !important;
+    padding: 5px 10px;
+    border-radius: 16px;
+}
+.verify-section .verify-body {
+    position: relative;
+}
+.verify-section .verify-body .getBdt::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    margin-left: -5px;
+    border-width: 10px 5px;
+    border-style: solid;
+    border-color: #0000ff transparent transparent transparent;
+}
+.verify-section .verify-body .getBdt i {
+    font-size: 11px;
+    margin-right: 5px;
+}
+.verify-section .verify-selection  {
+    background: #e1e1e1;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.verify-section .verify-selection a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF) !important;
+    border-radius: 5px;
+}
+.verify-section .verify-selection .id_verify,
+.verify-section .verify-selection .account_verify,
+.verify-section .verify-selection .number_verify,
+.verify-section .verify-selection .message_verify{
+    position: relative;
+}
+.verify-section .verify-selection .posit {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 2px;
+}
+.verify-section .upper_profile a {
+    text-decoration: none;
+}
+.verify-section .upper_profile i {
+    border-radius: 5px;
+    /* font-size: 11px; */
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF) !important;
+    color: #ffffff;
+    padding: 10px;
+}
+.verify-section .upper_profile span {
+    font-size: 11px;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, #005DAC, #0030FF);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    margin: 10px 0;
+    display: inline-block;
 }
 /* <================= profile page end =================> */
 
